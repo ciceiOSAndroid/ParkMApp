@@ -130,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09F8B6D9215E72FD0000CCBF /* LaunchScreen.storyboard in Resources */,
+				099F0192215E7A040093E69E /* TiempoStoryboard.storyboard in Resources */,
 				09F8B6D6215E72FD0000CCBF /* Assets.xcassets in Resources */,
 				09F8B6D4215E72FD0000CCBF /* Main.storyboard in Resources */,
 				0961CC65215E7A5000ADF4F0 /* resumenStoryboard.storyboard in Resources */,
@@ -145,6 +146,7 @@
 			files = (
 				0961CC63215E7A2700ADF4F0 /* resumenViewController.swift in Sources */,
 				09F8B6D1215E72FD0000CCBF /* ViewController.swift in Sources */,
+				099F0190215E78FE0093E69E /* TiempoViewController.swift in Sources */,
 				09F8B6CF215E72FD0000CCBF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
