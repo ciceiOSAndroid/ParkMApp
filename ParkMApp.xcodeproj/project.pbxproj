@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0961CC63215E7A2700ADF4F0 /* resumenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0961CC62215E7A2700ADF4F0 /* resumenViewController.swift */; };
+		0961CC65215E7A5000ADF4F0 /* resumenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0961CC64215E7A5000ADF4F0 /* resumenStoryboard.storyboard */; };
 		09F8B6CF215E72FD0000CCBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F8B6CE215E72FD0000CCBF /* AppDelegate.swift */; };
 		09F8B6D1215E72FD0000CCBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F8B6D0215E72FD0000CCBF /* ViewController.swift */; };
 		09F8B6D4215E72FD0000CCBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F8B6D2215E72FD0000CCBF /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0961CC62215E7A2700ADF4F0 /* resumenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = resumenViewController.swift; sourceTree = "<group>"; };
+		0961CC64215E7A5000ADF4F0 /* resumenStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = resumenStoryboard.storyboard; sourceTree = "<group>"; };
 		09F8B6CB215E72FD0000CCBF /* ParkMApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkMApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F8B6CE215E72FD0000CCBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09F8B6D0215E72FD0000CCBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				09F8B6D5215E72FD0000CCBF /* Assets.xcassets */,
 				09F8B6D7215E72FD0000CCBF /* LaunchScreen.storyboard */,
 				09F8B6DA215E72FD0000CCBF /* Info.plist */,
+				0961CC62215E7A2700ADF4F0 /* resumenViewController.swift */,
+				0961CC64215E7A5000ADF4F0 /* resumenStoryboard.storyboard */,
 			);
 			path = ParkMApp;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 				09F8B6D9215E72FD0000CCBF /* LaunchScreen.storyboard in Resources */,
 				09F8B6D6215E72FD0000CCBF /* Assets.xcassets in Resources */,
 				09F8B6D4215E72FD0000CCBF /* Main.storyboard in Resources */,
+				0961CC65215E7A5000ADF4F0 /* resumenStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0961CC63215E7A2700ADF4F0 /* resumenViewController.swift in Sources */,
 				09F8B6D1215E72FD0000CCBF /* ViewController.swift in Sources */,
 				09F8B6CF215E72FD0000CCBF /* AppDelegate.swift in Sources */,
 			);
