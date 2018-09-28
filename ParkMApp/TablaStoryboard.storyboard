@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rso-58-L8F">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GillSans.ttc">
+            <string>GillSans</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Tipo Vehiculo Table View Controller-->
+        <scene sceneID="btA-9x-BSD">
+            <objects>
+                <tableViewController id="rso-58-L8F" customClass="TipoVehiculoTableViewController" customModule="ParkMApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="l23-hk-aer">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Celda" rowHeight="134" id="wOf-Pd-IhT" customClass="CeldaTableViewCell" customModule="ParkMApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="134"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wOf-Pd-IhT" id="Z5b-DO-fC0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="133.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cj4-jt-PbW">
+                                            <rect key="frame" x="9" y="2" width="184" height="123"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="184" id="VGs-om-47b"/>
+                                                <constraint firstAttribute="height" constant="123" id="dhD-vB-gLt"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCM-a7-6M5">
+                                            <rect key="frame" x="201" y="49" width="343" height="34"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="TCM-a7-6M5" secondAttribute="height" multiplier="343:34" id="eng-aI-cmr"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="GillSans" family="Gill Sans" pointSize="38"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="TCM-a7-6M5" firstAttribute="centerY" secondItem="Z5b-DO-fC0" secondAttribute="centerY" id="52C-hO-wki"/>
+                                        <constraint firstItem="TCM-a7-6M5" firstAttribute="leading" secondItem="cj4-jt-PbW" secondAttribute="trailing" constant="8" symbolic="YES" id="Duz-oB-jBQ"/>
+                                        <constraint firstItem="cj4-jt-PbW" firstAttribute="top" secondItem="Z5b-DO-fC0" secondAttribute="top" constant="2" id="Dvz-54-FAP"/>
+                                        <constraint firstItem="cj4-jt-PbW" firstAttribute="leading" secondItem="Z5b-DO-fC0" secondAttribute="leadingMargin" constant="-7" id="eVh-tU-JDn"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="TCM-a7-6M5" secondAttribute="bottom" constant="40" id="rNu-so-gnh"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="imagenCelda" destination="cj4-jt-PbW" id="8dT-vb-JNZ"/>
+                                    <outlet property="nombreText" destination="TCM-a7-6M5" id="OIb-1n-wAq"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rso-58-L8F" id="KtQ-RL-we6"/>
+                            <outlet property="delegate" destination="rso-58-L8F" id="9YV-fO-Opi"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2XX-Cd-9s3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-36" y="-20.239880059970016"/>
+        </scene>
+    </scenes>
+</document>
