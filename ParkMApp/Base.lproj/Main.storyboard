@@ -72,7 +72,7 @@
                                 </state>
                                 <connections>
                                     <action selector="saveSpot:" destination="310-tf-9dD" eventType="touchUpInside" id="1dZ-hC-1Nk"/>
-                                    <segue destination="WIe-ny-kc8" kind="show" id="7pN-2p-Uig"/>
+                                    <segue destination="WIe-ny-kc8" kind="show" identifier="segueCoordenadas" id="7pN-2p-Uig"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LB9-hI-73G">

@@ -42,7 +42,7 @@
                                 <state key="normal" title="Guardar"/>
                                 <connections>
                                     <action selector="guardarButton:" destination="nF7-M0-ADL" eventType="touchUpInside" id="neC-Sb-VhJ"/>
-                                    <segue destination="ly4-8O-Oaz" kind="show" id="Wxi-12-Q6j"/>
+                                    <segue destination="ly4-8O-Oaz" kind="show" identifier="segueCoordenadasResumen" id="Wxi-12-Q6j"/>
                                 </connections>
                             </button>
                         </subviews>

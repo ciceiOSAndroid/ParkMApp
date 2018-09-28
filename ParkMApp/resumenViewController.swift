@@ -19,10 +19,12 @@ class resumenViewController: UIViewController, MKMapViewDelegate {
     var currentTransportType = MKDirectionsTransportType.walking
     var currentRute: MKRoute?
     
+    var coordenadasMapa: CLLocationCoordinate2D?
+    
     /*---------------------------*/
     //sección provisional hasta que me envien los datos
-    let latitude:CLLocationDegrees = 40.7828647
-    let longitude:CLLocationDegrees = -73.9653551
+    var latitude:CLLocationDegrees = 40.7828647
+    var longitude:CLLocationDegrees = -73.9653551
     let latDelta:CLLocationDegrees = 0.01
     let longDelta:CLLocationDegrees = 0.01
     
@@ -32,6 +34,14 @@ class resumenViewController: UIViewController, MKMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //sección provisional hasta que me envien los datos
+        latitude = (coordenadasMapa?.latitude)!
+        longitude = (coordenadasMapa?.longitude)!
+        
+        print(latitude)
+        print(longitude)
+        /*--------------------------*/
         
         locationManager.requestWhenInUseAuthorization()
         let status = CLLocationManager.authorizationStatus()

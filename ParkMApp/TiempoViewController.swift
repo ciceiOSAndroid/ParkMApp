@@ -8,6 +8,7 @@
 
 import UIKit
 import UserNotifications
+import MapKit
 
 class TiempoViewController: UIViewController {
     
@@ -18,6 +19,7 @@ class TiempoViewController: UIViewController {
     var hora: Int?
     var minuto: Int?
     var segundo: Int?
+    var coordenadasMapa: CLLocationCoordinate2D?
     
     @IBOutlet weak var tiempoPicker: UIDatePicker!
     
@@ -75,6 +77,8 @@ class TiempoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //tiempoPicker.addTarget(self, action: #selector(tiempoPickerChanged(sender:)), for: UIControlEvents.valueChanged)
+        
+        
     }
     
     
@@ -99,5 +103,11 @@ class TiempoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueCoordenadasResumen" {
+            let destinationVC = segue.destination as! resumenViewController
+            destinationVC.coordenadasMapa = coordenadasMapa
+        }
+    }
     
 }

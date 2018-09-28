@@ -23,6 +23,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     var currentRute: MKRoute?
     var longPressR: UILongPressGestureRecognizer? = nil
     
+    var coordenadasMapa: CLLocationCoordinate2D?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,6 +52,10 @@ class MapViewController: UIViewController, MKMapViewDelegate {
             let newCoordinates = Map.convert(touchPoint!, toCoordinateFrom: Map)
             annotation.title = "Prueba"
             annotation.coordinate = newCoordinates
+            
+            coordenadasMapa = CLLocationCoordinate2D(latitude: annotation.coordinate.latitude, longitude: annotation.coordinate.longitude)
+            
+            
             Map.addAnnotation(annotation)
         }
         
@@ -102,6 +108,10 @@ class MapViewController: UIViewController, MKMapViewDelegate {
      
      // In a storyboard-based application, you will often want to do a little preparation before navigation
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueCoordenadas" {
+            let destinationVC = segue.destination as! TiempoViewController
+            destinationVC.coordenadasMapa = coordenadasMapa
+        }
      // Get the new view controller using segue.destinationViewController.
      // Pass the selected object to the new view controller.
      }
