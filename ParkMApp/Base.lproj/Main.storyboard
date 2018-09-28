@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7XG-Vp-qaF">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -28,7 +28,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="310-tf-9dD" kind="showDetail" identifier="toMap" id="RZg-HW-RQA"/>
+                                    <segue destination="310-tf-9dD" kind="show" id="u5E-Lq-aNw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -43,27 +43,28 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="cTy-QW-aUZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="61.600000000000001" y="65.217391304347828"/>
+            <point key="canvasLocation" x="400.80000000000001" y="65.217391304347828"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="K1c-tP-biD">
             <objects>
                 <viewController id="310-tf-9dD" customClass="MapViewController" customModule="ParkMApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="m6w-NZ-5i8">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="m6w-NZ-5i8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsCompass="NO" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BFP-rP-spa">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" showsCompass="NO" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BFP-rP-spa">
                                 <rect key="frame" x="16" y="20" width="343" height="507"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="507" id="Kbv-gz-oUX"/>
                                 </constraints>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ar1-ia-l1K">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ar1-ia-l1K">
                                 <rect key="frame" x="147" y="609" width="81" height="30"/>
                                 <color key="backgroundColor" red="0.37786936189999998" green="0.46442106519999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Save Spot">
@@ -71,9 +72,10 @@
                                 </state>
                                 <connections>
                                     <action selector="saveSpot:" destination="310-tf-9dD" eventType="touchUpInside" id="1dZ-hC-1Nk"/>
+                                    <segue destination="WIe-ny-kc8" kind="show" id="7pN-2p-Uig"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LB9-hI-73G">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LB9-hI-73G">
                                 <rect key="frame" x="147" y="545" width="29" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -102,7 +104,33 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dR4-Zh-Faj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="885.60000000000002" y="64.31784107946028"/>
+            <point key="canvasLocation" x="1224.8" y="64.31784107946028"/>
+        </scene>
+        <!--TiempoStoryboard-->
+        <scene sceneID="G50-m8-siv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TiempoStoryboard" id="WIe-ny-kc8" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eDr-Bx-dRh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1855.2" y="206.89655172413794"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BOb-JZ-JA7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7XG-Vp-qaF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tal-72-FLM">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FgG-2l-8Ga"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="urS-TI-N82" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-391" y="64"/>
         </scene>
     </scenes>
 </document>

@@ -22,8 +22,20 @@ class TiempoViewController: UIViewController {
     @IBOutlet weak var tiempoPicker: UIDatePicker!
     
     @IBAction func tiempoPicker(_ sender: Any) {
+        let fecha = Date()
+        let calendario = Calendar.current
         
+        dia = calendario.component(.day, from: fecha)
+        mes = calendario.component(.month, from: fecha)
+        año = calendario.component(.year, from: fecha)
+        
+        //hora = calendario.component(.hour, from: fecha)
+        minuto = calendario.component(.minute, from: fecha)
+        
+        //tiempoTextField.text = String(hora!) + String(minuto!)
     }
+    
+    
     @IBOutlet weak var tiempoTextField: UITextField!
     
     @IBAction func guardarButton(_ sender: Any) {
@@ -62,11 +74,11 @@ class TiempoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tiempoPicker.addTarget(self, action: Selector(("tiempoPickerChanged:")), for: UIControlEvents.valueChanged)
+        //tiempoPicker.addTarget(self, action: #selector(tiempoPickerChanged(sender:)), for: UIControlEvents.valueChanged)
     }
     
     
-    func tiempoPickerChanged(sender: UIDatePicker) {
+    @objc func tiempoPickerChanged(sender: UIDatePicker) {
 
         let fecha = Date()
         let calendario = Calendar.current

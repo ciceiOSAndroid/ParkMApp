@@ -42,6 +42,7 @@
                                 <state key="normal" title="Guardar"/>
                                 <connections>
                                     <action selector="guardarButton:" destination="nF7-M0-ADL" eventType="touchUpInside" id="neC-Sb-VhJ"/>
+                                    <segue destination="ly4-8O-Oaz" kind="show" id="Wxi-12-Q6j"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -56,6 +57,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="40F-J2-yYR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-370.39999999999998" y="117.39130434782609"/>
+        </scene>
+        <!--resumenStoryboard-->
+        <scene sceneID="YhI-ba-bzf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="resumenStoryboard" id="ly4-8O-Oaz" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eNR-g9-kKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="165"/>
         </scene>
     </scenes>
 </document>
