@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Resumen View Controller-->
+        <scene sceneID="fIS-Ea-eX7">
+            <objects>
+                <viewController id="Bk8-Ct-ROU" customClass="resumenViewController" customModule="ParkMApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uZY-SB-3ox">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ncb-rk-Gvf">
+                                <rect key="frame" x="0.0" y="114" width="375" height="388"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gDt-Qb-Tog">
+                                <rect key="frame" x="102" y="611" width="170" height="36"/>
+                                <color key="backgroundColor" red="0.9994240403175354" green="0.80099131248803479" blue="0.2821507145432231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="CANCELAR">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8GK-mR-b4W">
+                                <rect key="frame" x="319" y="607" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Vjk-ux-AGq"/>
+                                    <constraint firstAttribute="height" constant="40" id="ejF-0P-J8k"/>
+                                </constraints>
+                                <state key="normal" image="direction"/>
+                                <connections>
+                                    <action selector="showRoute:" destination="Bk8-Ct-ROU" eventType="touchUpInside" id="VVg-5C-6US"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHS-7D-wUH">
+                                <rect key="frame" x="106" y="542" width="163" height="38"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="33"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.081624348958333329" green="0.24243166711595324" blue="0.418212890625" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="sHS-7D-wUH" firstAttribute="leading" secondItem="1Nb-fQ-8Cs" secondAttribute="leading" constant="106" id="3UY-zb-pSp"/>
+                            <constraint firstItem="1Nb-fQ-8Cs" firstAttribute="trailing" secondItem="8GK-mR-b4W" secondAttribute="trailing" constant="16" id="7ZS-cX-ETl"/>
+                            <constraint firstItem="ncb-rk-Gvf" firstAttribute="trailing" secondItem="1Nb-fQ-8Cs" secondAttribute="trailing" id="DgZ-Re-h4g"/>
+                            <constraint firstItem="1Nb-fQ-8Cs" firstAttribute="trailing" secondItem="gDt-Qb-Tog" secondAttribute="trailing" constant="103" id="MAr-6I-tnI"/>
+                            <constraint firstItem="ncb-rk-Gvf" firstAttribute="leading" secondItem="1Nb-fQ-8Cs" secondAttribute="leading" id="MVa-0j-tcY"/>
+                            <constraint firstItem="ncb-rk-Gvf" firstAttribute="top" secondItem="1Nb-fQ-8Cs" secondAttribute="top" constant="94" id="Un8-5Q-T4f"/>
+                            <constraint firstItem="gDt-Qb-Tog" firstAttribute="leading" secondItem="1Nb-fQ-8Cs" secondAttribute="leading" constant="102" id="XJZ-rb-zT5"/>
+                            <constraint firstItem="gDt-Qb-Tog" firstAttribute="top" secondItem="sHS-7D-wUH" secondAttribute="bottom" constant="31" id="apO-PW-p2e"/>
+                            <constraint firstItem="1Nb-fQ-8Cs" firstAttribute="trailing" secondItem="sHS-7D-wUH" secondAttribute="trailing" constant="106" id="dmO-Y5-Qqo"/>
+                            <constraint firstItem="1Nb-fQ-8Cs" firstAttribute="bottom" secondItem="8GK-mR-b4W" secondAttribute="bottom" constant="20" id="sa1-2J-tNZ"/>
+                            <constraint firstItem="1Nb-fQ-8Cs" firstAttribute="bottom" secondItem="gDt-Qb-Tog" secondAttribute="bottom" constant="20" id="unR-N1-alG"/>
+                            <constraint firstItem="sHS-7D-wUH" firstAttribute="top" secondItem="ncb-rk-Gvf" secondAttribute="bottom" constant="40" id="zAp-2G-Kov"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Nb-fQ-8Cs"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapview" destination="ncb-rk-Gvf" id="F8q-bj-rfl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z7D-tH-ZAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.599999999999994" y="128.18590704647679"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="direction" width="40" height="40"/>
+    </resources>
+</document>
