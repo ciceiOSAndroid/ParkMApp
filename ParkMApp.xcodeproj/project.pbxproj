@@ -11,6 +11,7 @@
 		0961CC65215E7A5000ADF4F0 /* resumenStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0961CC64215E7A5000ADF4F0 /* resumenStoryboard.storyboard */; };
 		097884CD215EB04B0044F346 /* TiempoStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097884CB215EB04B0044F346 /* TiempoStoryboard.storyboard */; };
 		097884CE215EB04B0044F346 /* TiempoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097884CC215EB04B0044F346 /* TiempoViewController.swift */; };
+		09A18DEA215E823C004FE533 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A18DE9215E823C004FE533 /* MapViewController.swift */; };
 		09F8B6CF215E72FD0000CCBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F8B6CE215E72FD0000CCBF /* AppDelegate.swift */; };
 		09F8B6D1215E72FD0000CCBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F8B6D0215E72FD0000CCBF /* ViewController.swift */; };
 		09F8B6D4215E72FD0000CCBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09F8B6D2215E72FD0000CCBF /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 		0961CC64215E7A5000ADF4F0 /* resumenStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = resumenStoryboard.storyboard; sourceTree = "<group>"; };
 		097884CB215EB04B0044F346 /* TiempoStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TiempoStoryboard.storyboard; sourceTree = "<group>"; };
 		097884CC215EB04B0044F346 /* TiempoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiempoViewController.swift; sourceTree = "<group>"; };
+		09A18DE9215E823C004FE533 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		09F8B6CB215E72FD0000CCBF /* ParkMApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParkMApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09F8B6CE215E72FD0000CCBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09F8B6D0215E72FD0000CCBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				09F8B6CE215E72FD0000CCBF /* AppDelegate.swift */,
 				09F8B6D0215E72FD0000CCBF /* ViewController.swift */,
+				09A18DE9215E823C004FE533 /* MapViewController.swift */,
 				09F8B6D2215E72FD0000CCBF /* Main.storyboard */,
 				09F8B6D5215E72FD0000CCBF /* Assets.xcassets */,
 				09F8B6D7215E72FD0000CCBF /* LaunchScreen.storyboard */,
@@ -153,6 +156,7 @@
 				0961CC63215E7A2700ADF4F0 /* resumenViewController.swift in Sources */,
 				09F8B6D1215E72FD0000CCBF /* ViewController.swift in Sources */,
 				097884CE215EB04B0044F346 /* TiempoViewController.swift in Sources */,
+				09A18DEA215E823C004FE533 /* MapViewController.swift in Sources */,
 				09F8B6CF215E72FD0000CCBF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
