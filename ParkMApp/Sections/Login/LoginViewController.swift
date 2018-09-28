@@ -63,9 +63,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func didTapLogin(_ sender: UIButton) {
         if validFields() {
-            print("Campos Validos")
+            print("Campos válidos")
         } else {
-            print("Campos no Validos")
+            print("Campos no válidos")
         }
     }
     
